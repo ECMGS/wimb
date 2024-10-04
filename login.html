@@ -5,17 +5,25 @@
     <title>Login into wimb</title>
 
     <script src="./js/credentialsSetter.js"></script>
+
+    <link rel="stylesheet" href="css/wimb.css">
+    <link rel="stylesheet" href="css/login.css">
 </head>
 <body>
-   <div>
-        <h1>Login into wimb</h1>
+    <div>
+        <h1>Login into WIMB</h1>
         <form action="./index.html" method="POST">
+            <h2>Use your MPASS or MobilityLabs account to login or register <a href="https://mobilitylabs.emtmadrid.es/sip/es/oauth/register?client_id=f2f08cad-4c18-4538-ae18-11da67819299&redirect_uri=aHR0cHM6Ly9tb2JpbGl0eWxhYnMuZW10bWFkcmlkLmVzL2Rlc2EvZXMvbG9naW4vYXV0aG9yaXplZA==&scope=&context=cG9ydGFs&type=">here</a></h2>
             <label for="email">Email</label>
             <input type="text" id="email" name="email" required>
             <label for="password">Password</label>
             <input type="password" id="password" name="password" required>
             <button type="submit">Login</button>
         </form>
-   </div> 
+        
+    </div>
+    <div id="cookie-info">
+        This pages uses cookies to store your credentials and specific settings. These will be store in your browser and will be used to login into the EMT API and provide a personalized experience. No data will be store in the server. You accept this by clicking the login button.
+    </div> 
 </body>
 </html>
